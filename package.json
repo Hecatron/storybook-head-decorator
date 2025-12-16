@@ -1,0 +1,36 @@
+{
+  "name": "@hecatron/storybook-head-decorator",
+  "author": "Hecatronic",
+  "version": "0.0.1",
+  "description": "A Storybook decorator that manipulates the head section for adding removing css style blocks",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hecatron/storybook-head-decorator.git"
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "storybook",
+    "addon",
+    "decorator"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "unbuild": "^3.6.1"
+  },
+  "files": [
+    "dist/**/*",
+    "Readme.md"
+  ]
+}

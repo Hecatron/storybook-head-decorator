@@ -1,0 +1,25 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "rootDir": "./src",
+      "baseUrl": ".",
+      "incremental": false,
+      "noImplicitAny": false,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "module": "esnext",
+      "skipDefaultLibCheck": true,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "target": "es2015",
+      "lib": ["es2018", "dom"],
+      "allowJs": true,
+    },
+    "exclude": [
+      "dist",
+      "node_modules",
+      "scripts",
+    ]
+  }
+  
