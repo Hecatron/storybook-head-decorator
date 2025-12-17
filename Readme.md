@@ -12,10 +12,23 @@ The idea being instead of importing the global css within the component, import 
 
   * `removeHeadStyle` - searches for a style block with a given id (defaults to id of 'custom') then removes any style blocks found with that id
   * `addHeadStyle` - inserts a stlye block with the given css and id (defaults to id of 'custom')
-  * `replaceHeadStyle`  -performs a remove then a add.
+  * `replaceHeadStyle` - performs a remove then a add, the same as the above but within a single statement.
 
+## Examples
 
-## Example using Replace
+In both of the below examples tailwind v4 will be separately built independently for each story with a different theme
+without any form of overlap between the stories
+
+### Example using Replace
+
+`ExampleComponent1.css`
+
+```css
+@import "tailwindcss";
+@theme {
+  --color-primary-100: #007c90;
+}
+```
 
 `ExampleComponent1.stories.tsx`
 
@@ -44,7 +57,16 @@ const meta = preview.meta({
 export const Default = meta.story();
 ```
 
-## Example using Add / Remove
+### Example using Add / Remove
+
+`ExampleComponent2.css`
+
+```css
+@import "tailwindcss";
+@theme {
+  --color-primary-100: #756d3b;
+}
+```
 
 `ExampleComponent2.stories.tsx`
 
