@@ -1,6 +1,6 @@
 {
   "name": "@hecatron/storybook-head-decorator",
-  "author": "Hecatronic",
+  "author": "Hecatron",
   "version": "0.0.1",
   "description": "A Storybook decorator that manipulates the head section for adding removing css style blocks",
   "type": "module",
@@ -22,7 +22,8 @@
     "decorator"
   ],
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "publish": "bun publish --access public"
   },
   "license": "MIT",
   "devDependencies": {
