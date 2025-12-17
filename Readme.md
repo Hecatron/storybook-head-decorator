@@ -38,7 +38,7 @@ import { ExampleComponent1 } from "./ExampleComponent1";
 // Import the css as inline
 import css from './ExampleComponent1.css?inline';
 // Import the decorators
-import { replaceHeadStyle } from 'storybook-head-decorator';
+import { replaceHeadStyle } from '@hecatron/storybook-head-decorator';
 
 const meta = preview.meta({
   title: "Examples/ExampleComponent1",
@@ -76,7 +76,7 @@ import { ExampleComponent2 } from "./ExampleComponent2";
 // Import the css as inline
 import css from './ExampleComponent2.css?inline';
 // Import the decorators
-import { removeHeadStyle, addHeadStyle } from 'storybook-head-decorator';
+import { removeHeadStyle, addHeadStyle } from '@hecatron/storybook-head-decorator';
 
 const meta = preview.meta({
   title: "Layouts/Pricing/ExampleComponent2",
