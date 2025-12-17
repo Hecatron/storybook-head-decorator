@@ -1,13 +1,13 @@
 # Readme
 
-One of the problems you can run into with storybook is relates to global css.
+One of the problems you can run into with storybook relates to global css.  
 Each story is rendered within an iframe, but any css imported into a component
-will be visible to all components across all stories.
+will be visible to all components across all stories.  
 This can be be problem for example if you want to try out different tailwind themes under different stories but the global css overlaps
 
   * https://github.com/storybookjs/storybook/issues/16016
 
-As a workaround to this we can use decorators to manipulate the style block within the head section of the iframe.
+As a workaround to this we can use decorators to manipulate the style block within the head section of the iframe.  
 The idea being instead of importing the global css within the component, import it inlined within the story then pass it to the decorator to insert
 
   * `removeHeadStyle` - searches for a style block with a given id (defaults to id of 'custom') then removes any style blocks found with that id
