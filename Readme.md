@@ -79,7 +79,7 @@ import css from './ExampleComponent2.css?inline';
 import { removeHeadStyle, addHeadStyle } from '@hecatron/storybook-head-decorator';
 
 const meta = preview.meta({
-  title: "Layouts/Pricing/ExampleComponent2",
+  title: "Examples/ExampleComponent2",
   component: ExampleComponent2,
   //https://storybook.js.org/docs/writing-docs/autodocs
   //tags: ["autodocs"],
